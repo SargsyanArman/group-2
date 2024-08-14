@@ -1,12 +1,50 @@
+button {
+    cursor: pointer;
+}
+
 ul.list {
+    margin: 20px auto;
+    padding: 0 32px;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
 }
 
 ul.list li a {
     color: #242424;
+    line-height: 1.25rem;
     text-decoration: none;
+}
+
+ul.list li a>span {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+ul.list .thumbnail {
+    width: 225.5px;
+    height: 301px;
+    border-radius: 12px;
+    position: relative;
+}
+
+ul.list .thumbnail .likeButton {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    color: #242424;
+    font-size: 1.25rem;
+    position: absolute;
+    top: auto;
+    right: 0;
+}
+
+ul.list .thumbnail .likeButton:hover {
+    color: #a73afd;
 }
 
 ul.list .info .price {
@@ -22,6 +60,7 @@ ul.list .info .itemTitle {
 
 ul.list .info .categories {
     color: #9d9da5;
+    text-overflow: ellipsis;
 }
 
 ul.list .info .rating {
@@ -29,9 +68,33 @@ ul.list .info .rating {
     font-weight: 400;
 }
 
+ul.list .info .rating i {
+    color: #fca95d;
+}
+
 ul.list .info .ratingsNumber {
     color: #9d9da5;
     font-size: 0.75rem;
     font-weight: 400;
+}
+
+ul.list .cartBtn {
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    border-radius: 12px;
+    background-color: #a73afd;
+    color: white;
+    font-size: 0.875rem;
+    line-height: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+ul.list .cartBtn:hover {
+    background-color: #a73afde6;
 }
 
